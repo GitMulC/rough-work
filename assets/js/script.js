@@ -1,7 +1,7 @@
-document.getElementById("startGame").addEventListener("click", function() {
-    alert("FIGHT!");
-  });
 
+/**
+ * Plays sound when clicking divs
+ */
 function play() {
     var audio = document.getElementById("audio");
     audio.currentTime = 0;
