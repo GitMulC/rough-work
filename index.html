@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gladiator Test</title>
+</head>
+<body>
+    <div class="right-swing" onclick="alert('Swing Right')">
+        Right Click Here
+    </div>
+
+    <div class="left-swing" onclick="alert('Swing Left')">
+        Left Click Here
+    </div>
+
+    <audio class="sword-swing" src="assets/sounds/sword-swing.wav"></audio>
+
+    <script>
+        // e is describing what happened in the console
+        window.addEventListener('click', function(e){
+            let audio = document.getElementsByClassName('sword-swing');
+            function playAudio (click){
+                console.log(audio);
+                audio.play();
+            }
+            
+        });
+    </script>
+</body>
+</html>

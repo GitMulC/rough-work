@@ -1,0 +1,13 @@
+.right-swing {
+    float: right;
+    padding: 8em;
+    border: 5px solid black;
+    margin: 19em 0em;
+}
+
+.left-swing {
+    float: left;
+    padding: 8em;
+    border: 5px solid black;
+    margin: 19em 0em;
+}
