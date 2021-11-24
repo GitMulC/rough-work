@@ -11,3 +11,10 @@
     border: 5px solid black;
     margin: 19em 0em;
 }
+
+.bottom-button {
+    position: absolute;
+    bottom: 0;
+    align-content: center;
+    margin: 4em 35em;
+}

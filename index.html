@@ -8,26 +8,21 @@
     <title>Gladiator Test</title>
 </head>
 <body>
-    <div class="right-swing" onclick="alert('Swing Right')">
+    <div class="right-swing" onclick="play()">
         Right Click Here
     </div>
 
-    <div class="left-swing" onclick="alert('Swing Left')">
+    <div class="left-swing" onclick="play()">
         Left Click Here
     </div>
+    <div class="bottom-button">
+        <button id="startGame">Lets Fight!</button>
+    </div>
 
-    <audio class="sword-swing" src="assets/sounds/sword-swing.wav"></audio>
+    <audio id="audio" src="assets/sounds/sword-swing.wav"></audio>
 
-    <script>
-        // e is describing what happened in the console
-        window.addEventListener('click', function(e){
-            let audio = document.getElementsByClassName('sword-swing');
-            function playAudio (click){
-                console.log(audio);
-                audio.play();
-            }
-            
-        });
+    <script src="assets/js/script.js"></script>
+        
     </script>
 </body>
 </html>
