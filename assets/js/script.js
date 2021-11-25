@@ -9,7 +9,8 @@ console.log(getSwing());
 
 /**
  * Not working, don't know why. Want a listener to trigger when either div(swing1 & swing2) is clicked to run getSwing();
- * then check if the random one generated is the same as the one clicked and if it is counts as a block.
+ * then check if the random one generated is the same as the one clicked and if it is counts as a block, and block sound will play.
+ * Then if it isn't a block it's a successful hit on the gladiator who will lose one hitpoint.
  */
 // swing1.addEventListener('click', getSwing()); 
 // swing2.addEventListener('click', getSwing());
