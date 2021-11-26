@@ -1,9 +1,5 @@
-let swing1 = document.getElementById('left-swing');
-let swing2 = document.getElementById('right-swing');
-let swing = [swing1, swing2];
-
-function getSwing (event) {
-    return swing[Math.floor(Math.random()*swing.length)];
+function getSwing () {
+    return Math.floor(Math.random()*2);
 }
 console.log(getSwing());
 
@@ -21,18 +17,25 @@ console.log(getSwing());
  * What do I put in the item place?
  * How do I see this on the console to tell if it's working?
  */
-document.querySelectorAll('.attack').forEach(item => {
-    item.addEventListener('click', event => {
-        return swing[Math.floor(Math.random()*swing.length)];
-    })
-})
+
 
 
 /**
- * Plays sound when clicking divs
+ * Sounds
  */
-function play() {
+function play(blockedAttack) {
     var audio = document.getElementById("audio");
     audio.currentTime = 0;
     audio.play();
+    if(blockedAttack) {
+        audio1.play();
+    } else {
+        audio2.play();
+    }
+}
+
+function swing (swingSide) {
+    let result = getSwing();
+    let blockedAttack = result === swingSide;
+    play(blockedAttack);
 }
